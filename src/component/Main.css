@@ -1,0 +1,29 @@
+.main {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    /* background-image: url("/public/images/ashp5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+.main .card_Box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    gap: 25px;
+}
+.main .card_Box .card {
+    background-color: rgba(158, 156, 156, 0.4);
+    backdrop-filter: blur(15px);
+    color: bisque;
+}
+.main .card_Box img {
+    width: 97.5%;
+    height: 300px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 15px;
+    margin: 4px;
+}
+

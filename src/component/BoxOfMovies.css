@@ -1,0 +1,108 @@
+.boxOfMovies {
+    width: 100%;
+    /* border: 2px solid white; */
+    
+}
+.boxOfMovies .titelBoxOfMovies {
+    margin: 80px 50px;
+}
+/*--------------------------------------------------------*/
+.boxOfMovies .boxNextPrevious {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    /* border: 2px solid white; */
+}
+.boxOfMovies .boxNextPrevious button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background: transparent;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.boxOfMovies .boxNextPrevious button:hover {
+    background-color: rgb(139, 145, 145);
+}
+.boxOfMovies .boxNextPrevious .lblNumberPage {
+    font-size: 18px;
+}
+
+/*-------------------- card movie ------------------------*/
+.moviesList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: 13px;
+}
+
+.movieItem {
+    position: relative;
+    max-width: 300px;
+    margin: 30px 0;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movieItem:hover {
+    z-index: 1;
+    transform: translateY(-15px) scale(1.05) rotate(-3deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+}
+
+.movieItem img {
+    width: 100%;
+    height: auto;
+}
+
+.movieItem .detailsMovieItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movieItem .titleMoviItem {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.movieItem .titleMoviItem h4 {
+    color: #cfcfcf;
+    text-align: left;
+}
+
+.movieItem .detailsMovieItem .imgFavourite {
+    width: 12%;
+    height: auto;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.movieItem .rating {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 225, 55, 0.897);
+    color: white;
+    padding: 9px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*---------------------------------------------------------*/
+

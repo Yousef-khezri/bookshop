@@ -1,0 +1,140 @@
+.userPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    font-size: 30px;
+}
+
+.userPage .menuUserPage {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.boxUserImage {
+  width: 40%;
+}
+
+.boxUserImage img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.userPage .menuUserPage .detailsUser {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*------------ styles input Gender selection -------------*/
+.selectWrapper {
+    height: 35px;
+    margin-left: 20px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(95, 95, 95);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 4px #999;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.selectWrapper select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: inherit;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.selectWrapper select:focus {
+    background-color: rgb(100, 100, 100);
+    color: yellow;
+    box-shadow: 0 2px #666;
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.selectWrapper select:active {
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+}
+
+/*------- style Input Phone -----------*/
+.phoneInputWrapper {
+    height: 35px;
+    margin-left: 20px;
+    background-color: rgb(126, 126, 126);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* padding: 5px 10px; */
+    box-shadow: 0 4px #999;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.phoneInputWrapper input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: 50px;
+    outline: none;
+    padding: 0;
+}
+
+.phoneInputWrapper input:focus {
+    background-color: rgb(100, 100, 100);
+    color: yellow;
+    box-shadow: 0 2px #666;
+    transform: translateY(-2px);
+}
+
+.phoneInputWrapper input:active {
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+}
+
+/*---------- Button Change Details User ------------*/
+.detailsUser .btnChangeDetailsUser {
+    width: 70%;
+    height: 35px;
+    margin-left: 25%;
+    border-radius: 15px;
+    background-color: rgb(160, 160, 160);
+    color: white;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 4px #999;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.detailsUser .btnChangeDetailsUser:hover {
+    background-color: rgb(100, 100, 100);
+    color: yellow;
+    box-shadow: 0 4px #666;
+    transform: translateY(-2px);
+}
+
+.detailsUser .btnChangeDetailsUser:active {
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+}

@@ -1,0 +1,49 @@
+.search_Page {
+    width: 50%;
+    display: flex ;
+    flex-direction: row;
+    background-color: rgb(236, 76, 76);
+}
+.search_Page .mb-3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(236, 76, 76);
+}
+
+.search_Page .mb-3 .input-Search {
+    width: 90%;
+    height: 40px;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 20px;
+    background-color: rgb(236, 76, 76);
+    color: rgb(214, 214, 214);
+}
+
+.search_Page .mb-3 .btnSearch {
+    width: 30px;
+    height: 40px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(236, 76, 76);
+}
+
+.btnAdvancedSearch {
+    background-color: inherit;
+    color: rgb(187, 187, 187);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btnAdvancedSearch:hover, .btnAdvancedSearch:focus {
+    /* background-color: #ee5555; */
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.9);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 0;
+}

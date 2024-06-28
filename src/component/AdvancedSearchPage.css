@@ -1,0 +1,11 @@
+.advancedSearchPage{
+    min-height: 100vh;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    margin-top: 100px;
+}

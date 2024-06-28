@@ -1,0 +1,118 @@
+/*###########################################*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background: transparent;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.body .box {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+}
+
+.body .box .item {
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 140px);
+    width: 280px;
+    height: 350px;
+    background: #fff;
+    transition: 0.5s;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1);
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    user-select: none;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.box .item:nth-child(1) {
+    transform: translate3d(-250px, 0, 0) scale(0.8) rotateY(25deg);
+    z-index: 1;
+}
+.box .item:nth-child(2) {
+    transform: translate3d(-140px, 0, 0) scale(0.9) rotateY(15deg);
+    z-index: 2;
+}
+.box .item:nth-child(3) {
+    transform: translate3d(0px, 0, 30px) scale(1) rotateY(0deg);
+    z-index: 3;
+}
+.box .item:nth-child(4) {
+    transform: translate3d(140px, 0, 0) scale(0.9) rotateY(-15deg);
+    z-index: 2;
+}
+.box .item:nth-child(5) {
+    transform: translate3d(250px, 0, 0) scale(0.8) rotateY(-25deg);
+    z-index: 1;
+}
+
+.box .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body .buttons {
+    position: absolute;
+    bottom: -30px;
+    display: flex;
+    gap: 20px;
+}
+.body .buttons span {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+.body .buttons span:hover {
+    opacity: 1;
+}
+.body .buttons span::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    rotate: -45deg;
+}
+.body .buttons span:last-child:before {
+    content: '';
+    position: absolute;
+    left: initial;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    rotate: 135deg;
+}

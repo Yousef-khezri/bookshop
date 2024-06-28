@@ -1,0 +1,43 @@
+Sampel :
+
+https://openlibrary.org/
+
+--------------- search with title ---------------------------
+https://openlibrary.org/search.json?title=the+lord+of+the+rings
+--------------- search with subjects ------------------------
+https://openlibrary.org/subjects/${love}.json
+--------------- search with Author --------------------------
+https://openlibrary.org/search.json?author=${tolkien}
+--------------- search with Lists ---------------------------
+http://openlibrary.org/people/${george08}/lists.json
+---------------------------
+https://openlibrary.org/people/mekBot/books/want-to-read.json
+
+https://openlibrary.org/developers/api
+
+https://openlibrary.org/dev/docs/api/books
+
+https://openlibrary.org/dev/docs/api/search
+
+https://openlibrary.org/search.json?q=the+lord+of+the+rings
+
+https://openlibrary.org/search.json?q=${the+lord+of+the+rings}&page=${2}   ****
+
+https://openlibrary.org/works/OL18020194W/ratings.json
+
+-----------------------
+images :
+
+https://openlibrary.org/dev/docs/api/covers
+
+Author Photos :
+https://covers.openlibrary.org/a/$key/$value-$size.jpg
+https://covers.openlibrary.org/a/olid/OL229501A-S.jpg
+https://covers.openlibrary.org/a/olid/OL229501A-M.jpg
+https://covers.openlibrary.org/a/olid/OL229501A-L.jpg
+
+Book covers :
+API => "cover_id": 11687738,
+https://covers.openlibrary.org/b/$key/$value-$size.jpg
+https://covers.openlibrary.org/b/id/240727-M.jpg
+https://covers.openlibrary.org/b/id/240727-L.jpg

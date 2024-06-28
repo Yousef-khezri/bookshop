@@ -1,0 +1,387 @@
+.pageDetailsMovie {
+	min-width: 100vw;
+	min-width: 550px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: #252525;
+	color: #dddddd;
+}
+.pageDetailsMovie .boxOne {
+	min-width: 550px;
+}
+
+.pageDetailsMovie .boxOne .boxDetailsMovie {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 50px 30px;
+}
+
+.boxOne .boxDetailsMovie .detailPart1,
+.detailPart2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*------------------------ detailPart1 -------------*/
+.boxOne .boxDetailsMovie .detailPart1 {
+	width: 35%;
+	min-width: 550px;
+	gap: 15px;
+}
+.detailPart1 .btnDownload,
+.btnWatchNow {
+	width: 65%;
+	height: 40px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+.detailPart1 .btnDownload {
+	background-color: rgb(83, 206, 83);
+	color: white;
+	font-size: 20px;
+}
+
+.boxOne .boxDetailsMovie .detailPart1 .imgMovie {
+	max-width: 100%;
+	max-height: 650px;
+}
+/*------------------------ detailPart2 -------------*/
+.detailPart2 {
+	width: 35%;
+	min-width: 250px;
+	padding: 20px 0;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	font-size: 23px;
+}
+
+.detailPart2 .lblTitle {
+	font-size: 35px;
+	font-weight: 700;
+    color: #eeeeee;
+}
+
+.images {
+	width: 45px;
+}
+
+.divBoxCalender {
+	display: flex;
+	align-items: center;
+	margin: 8px 0;
+}
+
+.detailPart2 .boxDownloads {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+    gap: 15px;
+}
+
+.boxDownloads .downloadButton {
+	display: inline-block;
+	padding: 5px 60px;
+	margin: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+	background-color: #3a3a3a;
+	color: #b6b6b6;
+	border-radius: 12px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.boxDownloads .downloadButton:hover {
+	background-color: rgb(48, 40, 40);
+	color: white;
+}
+
+.detailPart2 .btnRequestSubtitles {
+	width: 60%;
+	height: 40px;
+	background-color: #3a3a3a;
+	border-radius: 12px;
+	cursor: pointer;
+	font-size: 18px;
+}
+.detailPart2 .btnRequestSubtitles:hover {
+	background-color: rgb(48, 40, 40);
+	color: white;
+}
+
+.detailPart2 .imgFavourite{
+	cursor: pointer;
+}
+
+.detailPart2 .btnIMDb {
+	width: 30%;
+	height: 40px;
+	background-color: rgb(220, 196, 53);
+	color: rgb(48, 40, 40);
+	border-radius: 12px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+/*---- Star Rating ----*/
+.rating {
+  position: relative;
+  font-size: 50px;
+}
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: 'FontAwesome';
+  line-height: 1;
+}
+
+.stars-outer::before {
+  content: '★★★★★★★★★★';
+  color: lightgray;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-inner::before {
+  content: '★★★★★★★★★★';
+  color: gold;
+}
+/* .pageDetailsMovie .movieRating {
+	position: relative;
+	width: 65%;
+	display: flex;
+	align-items: center;
+}
+
+.starsContainer {
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+
+.starsContainer .imgStar {
+	width: 10%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.starsContainer .spanStar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: yellow;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 0;
+    border-top: 1px solid #252525;
+}
+
+
+.lblRating {
+	font-size: 28px;
+	font-weight: 900;
+	color: white;
+} */
+
+/*------------------------ detailPart3 -------------*/
+.detailPart3 {
+	width: 20%;
+	padding-top: 20px;
+}
+
+.detailPart3 .lblSimilarMoves {
+	font-size: 25px;
+	font-weight: 900;
+	margin-top: 30px;
+	padding-left: 25px;
+}
+
+.detailPart3 .moviesList {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: space-evenly;
+}
+
+.detailPart3 .moviesList .movieItem {
+	width: 35%;
+}
+
+/* ----------------  Box Watch Trailer -------------------- */
+.boxOne .boxWatchTrailer {
+    width: 100%;
+    min-height: 270px;
+	height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.boxOne .boxWatchTrailer .boxVideo {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    padding-bottom: 36.25%; /* This gives a 16:9 aspect ratio */
+}
+
+.boxOne .boxWatchTrailer .boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+/* *************************************************************************** */
+.detailPart3{
+	min-width: 175px;
+	max-width: 185px;
+	/* border: 2px solid #ffff; */
+}
+
+/* ********************** Box Cards ****************************************** */
+.titleMoviItem {
+	width: 100%;
+}
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    padding: 10px 25px;
+    cursor: pointer;
+	background-color: #272A2F;
+	border-radius: 15px;
+}
+
+button.active {
+    background-color: #575e66;
+    color: white;
+}
+
+.boxTwo{
+	margin-right: 23px;
+	margin-left: 25px;
+}
+
+.moviesList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: 23px;
+	margin-left: 25px;
+}
+
+.moviesList .cardItem,
+.detailPart3 .cardItem {
+    position: relative;
+    max-width: 180px;
+    margin: 30px 0;
+    margin-right: 30px;
+    padding-bottom: 10px;
+	background-color: #272A2F;
+	border-radius: 15px;
+	overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardItem:hover {
+    z-index: 1;
+    transform: translateY(-15px) scale(1.05) rotate(-3deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* .movieItem img {
+    
+} */
+
+.titleMoviItem h4 {
+	margin-bottom: 5px;
+}
+
+/* ---------- Popup card -------------------------------------------- */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    background: white;
+    padding: 20px;
+	background-color: #272A2F;
+	color: white;
+    border-radius: 10px;
+    width: 330px;
+    text-align: center;
+    position: relative;
+    animation: popup 0.3s ease-out forwards;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.popup-inner input {
+	padding: 8px 8px;
+	margin: 5px 0;
+	font-size: 17px;
+	font-weight: 800;
+	color: black;
+	border-radius: 13px;
+}
+
+.popup-inner .btn-goAhead {
+	width: 50%;
+	margin-top: 10px;
+	padding: 5px 0;
+	color: black;
+	border-radius: 13px;
+	font-size: 15px;
+	cursor: pointer;
+	background-color: rgb(59, 59, 241);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+/*************************************************************/
